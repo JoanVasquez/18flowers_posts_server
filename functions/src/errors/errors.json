@@ -4,24 +4,9 @@
     "status": 404,
     "success": false
   },
-  "jwtNoFound": {
-    "message": "No token provided",
-    "status": 500,
-    "success": false
-  },
-  "jwtFailed": {
-    "message": "Failed to authenticate token",
-    "status": 500,
-    "success": false
-  },
-  "routeError": {
+  "serverError": {
     "success": false,
-    "message": "Error in the route",
-    "status": 500
-  },
-  "propertyNoFound": {
-    "success": false,
-    "message": "Property not found",
+    "message": "Error in the server",
     "status": 500
   }
 }

@@ -1,0 +1,12 @@
+{
+    "noFound": {
+        "message": "Route not found in the server",
+        "status": 404,
+        "success": false
+    },
+    "serverError": {
+        "success": false,
+        "message": "Error in the server",
+        "status": 500
+    }
+}
