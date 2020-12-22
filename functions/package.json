@@ -8,8 +8,7 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "test": "jest --coverage --watch --colors",
-    "cover": "jest --coverage"
+    "test": "jest --coverage --watch --colors"
   },
   "engines": {
     "node": "12"

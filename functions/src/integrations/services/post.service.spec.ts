@@ -19,6 +19,6 @@ describe("PostService tests", () => {
       title: "test",
       body: "test",
     };
-    expect(await postService.update(post)).toEqual(post);
+    expect(await (await postService.update(post)).body).toEqual(post.body);
   });
 });
