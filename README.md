@@ -3,6 +3,7 @@
 Run the next command in the function directory to install all of the dependencies
 
     * npm i
+    * npm install -g firebase-tools
 
 ---
 
