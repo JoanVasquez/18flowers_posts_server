@@ -12,10 +12,12 @@ app.use(bodyParse.json());
 app.use(cors());
 
 app.use("/api/post", post);
+// HANDLER 404
 app.use("*", (req: Request, res: Response) => {
   const noFound: Error = JSON.parse(JSON.stringify(errors.noFound));
   errorHandler(noFound, req, res);
 });
+// MIDDLEWARE TO HANDLER EXCEPTIONS
 app.use(errorHandler);
 
 export default functions.https.onRequest(app);

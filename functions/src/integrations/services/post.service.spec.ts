@@ -2,11 +2,13 @@ import Post from "../../models/Post";
 import PostService from "../../services/PostService";
 const postService = new PostService();
 
+// Testing our functions are declared
 test("PostService should exist", () => {
   expect(postService.list).toBeDefined();
   expect(postService.update).toBeDefined();
 });
 
+// testing list and updated
 describe("PostService tests", () => {
   test("Testing list", async () => {
     expect((await postService.list()).length).toBeGreaterThan(0);

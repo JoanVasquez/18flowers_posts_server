@@ -7,6 +7,7 @@ const postService: PostService = new PostService();
 const serverError: Error = JSON.parse(JSON.stringify(errors.serverError));
 
 export default (req: Request, res: Response, next: NextFunction): void => {
+  // if response has not been send, call the service and send a response
   if (!res.headersSent) {
     postService
       .list()
